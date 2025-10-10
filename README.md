@@ -1,4 +1,4 @@
-# Open Source Contributions
+# Open Contributions
 
- * [Open_Source_Contributions_Project](./Open_Source_Contributions_Project)
- * [Open_Source_Contributions_Theory](./Open_Source_Contributions_Theory)
+ * [Problem_Solving](./Problem_Solving)
+ * [Scalable_Solution](./Scalable_Solution)
