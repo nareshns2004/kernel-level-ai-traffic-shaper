@@ -1,4 +1,4 @@
-# Open Contributions
+# open contributions
 
- * [Problem_Solving](./Problem_Solving)
- * [Scalable_Solution](./Scalable_Solution)
+ * [problem_solving](./problem_solving)
+ * [scalable_solution](./scalable_solution)
