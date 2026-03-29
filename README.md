@@ -402,8 +402,6 @@ Kernel code follows the [Linux kernel coding style](https://www.kernel.org/doc/h
 - **Userspace tools & SDK**: MIT
 - **Default AI model weights**: CC-BY-4.0
 
-See [LICENSE.md](LICENSE.md) for full terms.
-
 ---
 
 <p align="center">
