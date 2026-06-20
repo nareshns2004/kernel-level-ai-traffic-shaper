@@ -1,0 +1,15 @@
+obj-m += kernelmind.o
+
+kernelmind-y := \
+	kernelmind.o \
+	hook.o \
+	flow_table.o \
+	feature_extractor.o \
+	inference.o \
+	policy.o \
+	netlink.o \
+	online_learn.o \
+	proc.o \
+	tc_integration.o
+
+ccflags-y := -I$(src)/../ebpf

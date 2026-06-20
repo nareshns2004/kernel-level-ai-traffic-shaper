@@ -1,0 +1,7 @@
+obj-m += test_flow_table.o test_inference.o test_policy.o
+
+test_flow_table-y := test_flow_table.o
+test_inference-y := test_inference.o
+test_policy-y := test_policy.o
+
+ccflags-y := -I$(src)/../../kernel -I$(src)/../../ebpf
