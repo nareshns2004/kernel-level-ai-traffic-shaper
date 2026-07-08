@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "max_tree_depth": 8,
+  "max_estimators": 64,
+  "max_features": 32,
+  "weight_format": "Q8.8",
+  "classes": [
+    "unknown",
+    "realtime",
+    "interactive",
+    "streaming",
+    "bulk",
+    "p2p",
+    "gaming",
+    "voip",
+    "web",
+    "dns",
+    "anomaly",
+    "background"
+  ],
+  "features": [
+    "inter_arrival_us",
+    "jitter_us",
+    "avg_pkt_size",
+    "entropy_q8",
+    "bytes_kb",
+    "packet_count",
+    "tcp_flags",
+    "reserved"
+  ]
+}

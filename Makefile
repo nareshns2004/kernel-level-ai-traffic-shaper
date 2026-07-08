@@ -71,8 +71,9 @@ DAEMON_SRCS := \
 CLI_OBJS    := $(patsubst $(USERSPACE)/%.c,$(BUILD_DIR)/userspace/%.o,$(CLI_SRCS))
 DAEMON_OBJS := $(patsubst $(USERSPACE)/%.c,$(BUILD_DIR)/userspace/%.o,$(DAEMON_SRCS))
 
-USERSPACE_CFLAGS  := -O2 -Wall -Wextra -Werror -I$(KERNEL_DIR) -I$(EBPF_DIR)
-USERSPACE_LDFLAGS := -lnl-3 -lnl-genl-3
+USERSPACE_CFLAGS  := -O2 -Wall -Wextra -Werror -I$(KERNEL_DIR) -I$(EBPF_DIR) \
+                     -I$(USERSPACE)/cli -I$(USERSPACE)/daemon
+USERSPACE_LDFLAGS := -lnl-3 -lnl-genl-3 -pthread
 
 BPF_CFLAGS := -g -O2 -target bpf \
 	-D__TARGET_ARCH_$(ARCH) \
@@ -222,11 +223,11 @@ test-config:
 			continue; \
 		fi; \
 		$(PYTHON) -c "import pathlib, sys; \
-try: import tomllib \
-except ModuleNotFoundError: import tomli as tomllib; \
+import importlib; \
+tomllib = importlib.import_module('tomllib') if importlib.util.find_spec('tomllib') else importlib.import_module('tomli'); \
 p = pathlib.Path(sys.argv[1]); \
 tomllib.loads(p.read_text()); \
-print(f'ok: {p}')" "$$cfg"; \
+print('ok: {}'.format(p))" "$$cfg"; \
 	done
 
 # ---------------------------------------------------------------------------
