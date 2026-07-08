@@ -1,0 +1,12 @@
+[Unit]
+Description=KernelMind Traffic Shaper REST API Daemon
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/sbin/kmshaperd 9102
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

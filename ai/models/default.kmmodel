@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "num_trees": 4,
+  "num_features": 8,
+  "num_classes": 12,
+  "trees": [
+    {
+      "nodes": [
+        {"feature_idx": 0, "threshold_q8": 1000, "left": 1, "right": 2, "is_leaf": 0},
+        {"feature_idx": 2, "threshold_q8": 512, "left": 3, "right": 4, "is_leaf": 0},
+        {"leaf_value_q8": 32, "is_leaf": 1},
+        {"leaf_value_q8": 64, "is_leaf": 1},
+        {"leaf_value_q8": 96, "is_leaf": 1},
+        {"leaf_value_q8": 48, "is_leaf": 1},
+        {"leaf_value_q8": 0, "is_leaf": 1},
+        {"leaf_value_q8": 0, "is_leaf": 1}
+      ]
+    },
+    {
+      "nodes": [
+        {"feature_idx": 3, "threshold_q8": 128, "left": 1, "right": 2, "is_leaf": 0},
+        {"leaf_value_q8": 16, "is_leaf": 1},
+        {"leaf_value_q8": 80, "is_leaf": 1},
+        {"leaf_value_q8": 0, "is_leaf": 1},
+        {"leaf_value_q8": 0, "is_leaf": 1},
+        {"leaf_value_q8": 0, "is_leaf": 1},
+        {"leaf_value_q8": 0, "is_leaf": 1},
+        {"leaf_value_q8": 0, "is_leaf": 1}
+      ]
+    },
+    {
+      "nodes": [
+        {"feature_idx": 1, "threshold_q8": 500, "left": 1, "right": 2, "is_leaf": 0},
+        {"leaf_value_q8": 24, "is_leaf": 1},
+        {"leaf_value_q8": 72, "is_leaf": 1},
+        {"leaf_value_q8": 0, "is_leaf": 1},
+        {"leaf_value_q8": 0, "is_leaf": 1},
+        {"leaf_value_q8": 0, "is_leaf": 1},
+        {"leaf_value_q8": 0, "is_leaf": 1},
+        {"leaf_value_q8": 0, "is_leaf": 1}
+      ]
+    },
+    {
+      "nodes": [
+        {"feature_idx": 5, "threshold_q8": 16, "left": 1, "right": 2, "is_leaf": 0},
+        {"leaf_value_q8": 8, "is_leaf": 1},
+        {"leaf_value_q8": 56, "is_leaf": 1},
+        {"leaf_value_q8": 0, "is_leaf": 1},
+        {"leaf_value_q8": 0, "is_leaf": 1},
+        {"leaf_value_q8": 0, "is_leaf": 1},
+        {"leaf_value_q8": 0, "is_leaf": 1},
+        {"leaf_value_q8": 0, "is_leaf": 1}
+      ]
+    }
+  ]
+}

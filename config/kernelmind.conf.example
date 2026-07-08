@@ -1,0 +1,39 @@
+[core]
+interface = "eth0"
+mode = "adaptive"
+log_level = "info"
+
+[ai]
+model_path = "/etc/kernelmind/models/default.kmmodel"
+inference_threshold = 8
+online_learning = true
+update_interval_sec = 300
+
+[shaping]
+total_bandwidth_mbps = 1000
+min_flow_rate_kbps = 512
+max_flow_rate_mbps = 900
+
+[classes.realtime]
+dscp = "EF"
+htb_rate = "200mbit"
+htb_ceil = "400mbit"
+ai_min_priority = 0.85
+
+[classes.interactive]
+dscp = "AF41"
+htb_rate = "300mbit"
+htb_ceil = "700mbit"
+ai_min_priority = 0.50
+
+[classes.bulk]
+dscp = "CS1"
+htb_rate = "100mbit"
+htb_ceil = "500mbit"
+ai_min_priority = 0.0
+
+[anomaly]
+enabled = true
+entropy_threshold = 0.92
+auto_throttle = true
+throttle_rate_kbps = 128
