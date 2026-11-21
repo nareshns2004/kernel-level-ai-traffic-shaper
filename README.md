@@ -62,6 +62,5 @@ cd kernel-level-ai-traffic-shaper
 
 ## License
 
-`LICENSE` (Apache-2.0) and `LICENSE.md` (MIT) currently disagree; this will be
-settled to a single license (with GPL-2.0 for any kernel/BPF code that needs
-GPL-only helpers) before any further release.
+Kernel and eBPF code is GPL-2.0; userspace, AI tooling and tests are MIT.
+See `LICENSE` and the SPDX header in each file.
