@@ -1,9 +1,0 @@
-Straight traversal:
-A
-B
-C
-
-Reverse traversal:
-C
-B
-A
