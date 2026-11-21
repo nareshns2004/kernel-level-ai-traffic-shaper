@@ -54,9 +54,9 @@ Each directory has its own concerns, style rules, and test requirements — see 
 ### 1. Fork and clone
 
 ```bash
-git clone https://github.com/your-fork/kernelmind-shaper.git
-cd kernelmind-shaper
-git remote add upstream https://github.com/your-org/kernelmind-shaper.git
+git clone https://github.com/<your-username>/kernel-level-ai-traffic-shaper.git
+cd kernel-level-ai-traffic-shaper
+git remote add upstream https://github.com/nareshns2004/kernel-level-ai-traffic-shaper.git
 ```
 
 ### 2. Set up the development environment
@@ -65,7 +65,7 @@ See [Development Environment](#development-environment) below.
 
 ### 3. Find something to work on
 
-- Check issues tagged [`good first issue`](https://github.com/your-org/kernelmind-shaper/issues?q=label%3A%22good+first+issue%22)
+- Check issues tagged [`good first issue`](https://github.com/nareshns2004/kernel-level-ai-traffic-shaper/issues?q=label%3A%22good+first+issue%22)
 - Check the [Roadmap in README.md](README.md#roadmap) for planned features
 - Open a discussion before starting large or architectural changes
 
@@ -488,4 +488,4 @@ Contributors do not need to manage releases — just ensure your PR has a clear 
 
 ---
 
-*Questions? Open a [Discussion](https://github.com/your-org/kernelmind-shaper/discussions) or ping `@maintainers` in an issue.*
+*Questions? Open a [Discussion](https://github.com/nareshns2004/kernel-level-ai-traffic-shaper/discussions) or ping `@maintainers` in an issue.*
