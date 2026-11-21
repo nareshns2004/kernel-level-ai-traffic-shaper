@@ -1,0 +1,21 @@
+# Study material: not part of this project (licensing; see booklet section 12)
+high_level_design/
+low_level_design/
+
+# Build output and binaries
+build/
+*.o
+*.ko
+*.mod
+*.mod.c
+*.cmd
+.tmp_versions/
+Module.symvers
+modules.order
+*.bpf.o
+*.skel.h
+__pycache__/
+*.pyc
+
+# Private planning notes: never publish
+*Master Booklet*.pdf
